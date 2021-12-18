@@ -3,8 +3,10 @@ def modify_digits(digits):
         digits[i] = digits[i] * 2
     return digits
 
+
 def modify_digits_2(digits):
     return [digit * 2 for digit in digits]
+
 
 digits = [1, 2, 3, 4, 5]
 
