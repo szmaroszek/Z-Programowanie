@@ -64,4 +64,4 @@ api.add_resource(Ratings, '/ratings')
 api.add_resource(Tags, '/tags')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
