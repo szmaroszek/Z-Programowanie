@@ -19,4 +19,4 @@ photos_read =[]
 for photo in photos:
     photos_read.append(read_from_image(photo))
 
-[print(photo) for photo in photos_read]
+[print(f'--- photo: {i+1} ---\n' + photo) for i, photo in enumerate(photos_read)]
