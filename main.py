@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from os import listdir
 from os.path import isfile, join
-
+import time
 
 def highlight_people(source):
     if source.split('.')[-1] == 'jpg':
@@ -17,8 +17,10 @@ def photo_highlight(photo):
 
     out = cv2.imwrite('output.jpg', (640,480))
 
+    start_time = time.time()
     detection(photo, out, hog)
-        
+    print("--- %s seconds ---" % (time.time() - start_time))
+    
     cv2.waitKey(10000) & 0xFF == ord('q')
     cv2.destroyAllWindows()
 
