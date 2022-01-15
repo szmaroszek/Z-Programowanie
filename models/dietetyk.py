@@ -1,7 +1,7 @@
 from models.person import Person
 
 class Dietetyk(Person):
-    def __init__(self, name: str, surname: str, age: int, sex: str, degree: str, specialization: str):
+    def __init__(self, name: str, surname: str, age: int, sex: str, degree: str, specialization: str) -> None:
         super().__init__(name, surname, age, sex)
         self._degree = degree
         self._specialization = specialization

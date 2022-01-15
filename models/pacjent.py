@@ -1,7 +1,7 @@
 from models.person import Person
 
 class Pacjent(Person):
-    def __init__(self, name: str, surname: str, age: int, sex: str, weight: int, height: int):
+    def __init__(self, name: str, surname: str, age: int, sex: str, weight: int, height: int) -> None:
         super().__init__(name, surname, age, sex)
         self._weight = weight
         self._height = height
